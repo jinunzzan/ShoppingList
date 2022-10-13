@@ -71,8 +71,11 @@ extension ViewController: UITableViewDelegate {
             items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
             
+            
+            print(UserDefaults.standard.array(forKey: "item"))
         } else if editingStyle == .insert {
             
         }
     }
+    
 }
