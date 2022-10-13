@@ -27,8 +27,10 @@ class ViewController: UIViewController {
         
         let nibName = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
-    
+        
         items = UserDefaults.standard.array(forKey: "item") as? [String] ?? []
+        
+        
     }
   
   
@@ -71,8 +73,9 @@ extension ViewController: UITableViewDelegate {
             items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
             
-            
+            UserDefaults.standard.set(items, forKey: "item")
             print(UserDefaults.standard.array(forKey: "item"))
+            tableView.reloadData()
         } else if editingStyle == .insert {
             
         }
