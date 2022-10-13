@@ -14,32 +14,36 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var btn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.borderStyle = .none
         textField.layer.cornerRadius = 10
-        
-        
+        print(UserDefaults.standard.array(forKey: "item"))
         
         tableView.dataSource = self
         tableView.delegate = self
         
         let nibName = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
-        
-        
+    
+        items = UserDefaults.standard.array(forKey: "item") as? [String] ?? []
     }
-
-
+  
+  
     @IBAction func addBtnClick(_ sender: UIButton) {
         
         items.append(textField.text!)
         print(textField.text!)
         textField.text = ""
         print(items)
+        
+        UserDefaults.standard.set(items, forKey: "item")
+        
+        print(UserDefaults.standard.array(forKey: "item"))
+        
         tableView.reloadData()
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,13 +70,9 @@ extension ViewController: UITableViewDelegate {
         if editingStyle == .delete {
             items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
-//            tableView.beginUpdates()
-//            items.remove(at: (indexPath as NSIndexPath).row)
-//
-//            tableView.endUpdates()
+            
         } else if editingStyle == .insert {
             
         }
     }
-    
 }

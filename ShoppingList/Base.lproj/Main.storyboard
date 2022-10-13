@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -37,7 +38,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly6-v9-d3S">
-                                <rect key="frame" x="298" y="104" width="54" height="34"/>
+                                <rect key="frame" x="298.33333333333331" y="104" width="53.666666666666686" height="34"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="추가"/>
@@ -52,7 +53,6 @@
                             <constraint firstItem="UoG-BH-nyd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Tv-ly-jyo"/>
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5lU-Qq-wfO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ly6-v9-d3S" secondAttribute="trailing" constant="38" id="6N0-3Z-Ql9"/>
-                            <constraint firstItem="ly6-v9-d3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="298" id="7ap-Td-IOq"/>
                             <constraint firstItem="ly6-v9-d3S" firstAttribute="centerY" secondItem="31Z-9g-9lR" secondAttribute="centerY" id="DRv-YQ-Wym"/>
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DeF-Dr-k7a"/>
                             <constraint firstItem="UoG-BH-nyd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FEf-9S-ROJ"/>
@@ -60,7 +60,6 @@
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="top" secondItem="31Z-9g-9lR" secondAttribute="bottom" id="K2M-et-Yc1"/>
                             <constraint firstItem="UoG-BH-nyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oys-cC-6yR"/>
                             <constraint firstItem="ly6-v9-d3S" firstAttribute="top" secondItem="UoG-BH-nyd" secondAttribute="bottom" constant="13" id="U2K-WX-4jP"/>
-                            <constraint firstItem="ly6-v9-d3S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aGg-aH-HbB"/>
                             <constraint firstItem="31Z-9g-9lR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cHT-rO-6s6"/>
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="top" secondItem="31Z-9g-9lR" secondAttribute="bottom" id="eMz-bY-WUn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="31Z-9g-9lR" secondAttribute="trailing" constant="16" id="gUO-mY-zgm"/>
@@ -68,9 +67,11 @@
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pT2-1q-3mq"/>
                             <constraint firstItem="UoG-BH-nyd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qmL-c4-Adg"/>
                             <constraint firstItem="UoG-BH-nyd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vyC-2i-ZU1"/>
+                            <constraint firstItem="aaX-QR-v1Y" firstAttribute="top" secondItem="ly6-v9-d3S" secondAttribute="bottom" constant="13" id="weV-Yv-4XW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btn" destination="ly6-v9-d3S" id="iTi-Hz-KAS"/>
                         <outlet property="tableView" destination="aaX-QR-v1Y" id="CL1-BW-mFc"/>
                         <outlet property="textField" destination="31Z-9g-9lR" id="b8y-6E-kLI"/>
                     </connections>
