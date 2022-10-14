@@ -63,9 +63,11 @@
                             <constraint firstItem="31Z-9g-9lR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cHT-rO-6s6"/>
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="top" secondItem="31Z-9g-9lR" secondAttribute="bottom" id="eMz-bY-WUn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="31Z-9g-9lR" secondAttribute="trailing" constant="16" id="gUO-mY-zgm"/>
+                            <constraint firstItem="ly6-v9-d3S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="kuW-Z8-0kP"/>
                             <constraint firstItem="ly6-v9-d3S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="104" id="mUE-md-GaM"/>
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pT2-1q-3mq"/>
                             <constraint firstItem="UoG-BH-nyd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qmL-c4-Adg"/>
+                            <constraint firstItem="31Z-9g-9lR" firstAttribute="top" secondItem="UoG-BH-nyd" secondAttribute="bottom" id="thp-s7-G8J"/>
                             <constraint firstItem="UoG-BH-nyd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vyC-2i-ZU1"/>
                             <constraint firstItem="aaX-QR-v1Y" firstAttribute="top" secondItem="ly6-v9-d3S" secondAttribute="bottom" constant="13" id="weV-Yv-4XW"/>
                         </constraints>
