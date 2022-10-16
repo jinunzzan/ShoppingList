@@ -29,7 +29,8 @@ class ViewController: UIViewController {
         tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
         
         items = UserDefaults.standard.array(forKey: "item") as? [String] ?? []
-        
+     
+      
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -48,6 +49,7 @@ class ViewController: UIViewController {
         print(UserDefaults.standard.array(forKey: "item"))
         
         tableView.reloadData()
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,6 +80,7 @@ extension ViewController: UITableViewDelegate {
             UserDefaults.standard.set(items, forKey: "item")
             print(UserDefaults.standard.array(forKey: "item"))
             tableView.reloadData()
+           
         } else if editingStyle == .insert {
             
         }
