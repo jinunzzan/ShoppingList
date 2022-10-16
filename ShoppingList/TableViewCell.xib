@@ -19,27 +19,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qot-8z-M2R">
-                        <rect key="frame" x="62" y="11.666666666666666" width="41.333333333333343" height="20.666666666666671"/>
+                        <rect key="frame" x="38" y="11.666666666666666" width="41.333333333333343" height="20.666666666666671"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uP-IP-KGY">
-                        <rect key="frame" x="7" y="5" width="49" height="35"/>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uP-IP-KGY">
+                        <rect key="frame" x="7" y="5" width="25" height="35"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system"/>
+                        <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                        </buttonConfiguration>
                         <connections>
-                            <action selector="checkBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FUr-bM-0aJ"/>
+                            <action selector="checkBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kha-07-pxW"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHb-66-O7S">
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHb-66-O7S">
                         <rect key="frame" x="261" y="5" width="52" height="35"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
                         <connections>
-                            <action selector="checkStar:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="W2a-gp-3xw"/>
+                            <action selector="checkStar:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="89L-Eq-kry"/>
                         </connections>
                     </button>
                 </subviews>
